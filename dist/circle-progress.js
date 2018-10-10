@@ -383,7 +383,7 @@
             if (this.percentLabel) {
                 ctx.textBaseline = 'middle';
                 ctx.textAlign = "center";
-                ctx.fillText((this.value * 100) + '%', (this.size / 2), (this.size / 2));
+                ctx.fillText(Math.round((this.value * 100)) + '%', (this.size / 2), (this.size / 2));
             }
 
             if (v < 1) {
